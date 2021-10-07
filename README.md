@@ -2,6 +2,11 @@
 
 This is new branch for some experimental changes only.
 
+Steps:
+
+1. Investigate DFQ related algorithms;
+2. Follow the latest research ideas, results, and limits;
+
 
 
 PyTorch implementation of [Data Free Quantization Through Weight Equalization and Bias Correction](https://arxiv.org/abs/1906.04721) with some ideas from [ZeroQ: A Novel Zero Shot Quantization Framework](https://arxiv.org/abs/2001.00281).
