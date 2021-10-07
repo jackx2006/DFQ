@@ -1,4 +1,9 @@
 # DFQ
+
+This is new branch for some experimental changes only.
+
+
+
 PyTorch implementation of [Data Free Quantization Through Weight Equalization and Bias Correction](https://arxiv.org/abs/1906.04721) with some ideas from [ZeroQ: A Novel Zero Shot Quantization Framework](https://arxiv.org/abs/2001.00281).
 
 ## Results
@@ -164,14 +169,14 @@ python convert_ncnn.py --equalize --correction --quantize --relu --ncnn_build pa
   You will need to install/build the followings:  
   [ncnn](https://github.com/Tencent/ncnn)  
   [onnx-simplifier](https://github.com/daquexian/onnx-simplifier)  
-  
+
   Inference_cls.cpp only implements mobilenetv2. Basic steps are:  
 
   1. Run convert_ncnn.py to convert pytorch model (with layer equalization or bias correction) to ncnn int8 model and generate calibration table file. The name of out_layer will be printed to console.  
   ```
     python convert_ncnn.py --quantize --relu --equalize --correction
   ```
-  
+
   2. compile inference_cls.cpp
   ```
     mkdir build
